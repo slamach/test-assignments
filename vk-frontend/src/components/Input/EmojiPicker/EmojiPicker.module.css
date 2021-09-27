@@ -1,0 +1,24 @@
+.emoji-picker-container {
+  width: 290px;
+  height: 291px;
+  padding-bottom: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.25s opacity, 0.25s visibility;
+}
+
+.emoji-picker-container_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.emoji-picker {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #c5d0db;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}

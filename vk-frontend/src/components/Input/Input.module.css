@@ -1,0 +1,23 @@
+.textarea-container {
+  position: relative;
+}
+
+.input-area {
+  box-sizing: border-box;
+  width: 290px;
+  padding: 9px;
+  padding-right: 38px;
+  overflow-y: hidden;
+  font: inherit;
+  border: 1px solid #c5d0db;
+  border-radius: 4px;
+  resize: none;
+}
+
+.input-area::placeholder {
+  color: #939393;
+}
+
+.input-area:focus {
+  outline: none;
+}

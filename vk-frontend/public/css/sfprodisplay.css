@@ -1,0 +1,9 @@
+@font-face {
+  font-weight: 400;
+  font-family: "San Francisco Pro";
+  font-style: normal;
+  src: local("San Francisco Pro Display Regular"), local("San-Francisco-Pro-Display-Regular"),
+       url("./../fonts/SFProDisplay-Regular.woff2") format("woff2"),
+       url("./../fonts/SFProDisplay-Regular.woff") format("woff"),
+       url("./../fonts/SFProDisplay-Regular.ttf") format("truetype");
+    }

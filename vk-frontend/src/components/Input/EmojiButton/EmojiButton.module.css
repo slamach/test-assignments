@@ -1,0 +1,21 @@
+.emoji-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 9px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.emoji-button:focus {
+  outline: none;
+}
+
+.emoji-button path {
+  fill: #c5d0db;
+}
+
+.emoji-button_active path {
+  fill: #99a2ad;
+}

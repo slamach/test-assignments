@@ -1,0 +1,253 @@
+/*
+Theme Name: Палиндром - Тестовое задание
+Author: Дмитрий Свиридов
+*/
+
+body {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+
+  background-color: #f5f6f7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+}
+
+.preloader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  width: 200px;
+  height: 200px;
+
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  display: none;
+  min-width: 1800px;
+  padding: 50px;
+}
+
+.categories {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 1760px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 117px;
+
+  list-style: none;
+}
+
+.categories_wp-loop {
+  margin-bottom: 100px;
+}
+
+.category__title {
+  margin: 0;
+}
+
+.tab {
+  position: absolute;
+  top: 0;
+
+  cursor: pointer;
+}
+
+.tab_active {
+  z-index: 2;
+}
+
+.tab_1 {
+  left: 0;
+}
+
+.tab_2 {
+  left: 15%;
+}
+
+.tab_3 {
+  left: 30%;
+}
+
+.tab_4 {
+  left: 45%;
+}
+
+.tab_5 {
+  left: 60%;
+}
+
+.tab_6 {
+  right: 0;
+}
+
+.tab_6 svg {
+  transform: scaleX(-1);
+}
+
+.tab__background {
+  fill: #ffffff;
+}
+
+.tab__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  color: #4160ea;
+
+  transform: translate(-50%, -50%);
+}
+
+.tab_1 .tab__text {
+  left: 80px;
+
+  transform: translateY(-50%);
+}
+
+.tab_active .tab__background {
+  fill: #4160ea;
+}
+
+.tab_active .tab__text {
+  display: block;
+  box-sizing: border-box;
+  max-width: 230px;
+
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 47px;
+  color: #ffffff;
+
+  border-bottom: 1px solid #ffffff;
+}
+
+.category_active .category__title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.category__list {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding: 80px;
+
+  list-style: none;
+
+  background-color: #4160ea;
+  border-radius: 0 0 100px 100px;
+}
+
+.category_active .category__list {
+  display: flex;
+}
+
+.category__item {
+  width: 45%;
+  margin-bottom: 30px;
+}
+
+.category__item:last-child {
+  margin-bottom: 0;
+}
+
+.category__item:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
+.category__item:nth-last-child(2) .article__content {
+  padding-bottom: 0;
+
+  border: none;
+}
+
+.category__item:last-child .article__content {
+  padding-bottom: 0;
+
+  border: none;
+}
+
+.article__content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  border-bottom: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.article__column {
+  max-width: 550px;
+}
+
+.article__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+
+  transition: -webkit-text-decoration-color 0.25s ease;
+  transition:         text-decoration-color 0.25s ease;
+}
+
+.article__title:hover {
+  -webkit-text-decoration-color: #ffffff;
+          text-decoration-color: #ffffff;
+}
+
+.article__time {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.article__image {
+  width: 94px;
+  height: 94px;
+
+  border-radius: 50%;
+
+  -o-object-fit: cover;
+     object-fit: cover;
+}

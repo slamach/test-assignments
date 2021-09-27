@@ -1,0 +1,28 @@
+.bar-button {
+  box-sizing: border-box;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.bar-button:focus {
+  outline: none;
+}
+
+.bar-button path {
+  fill: #99a2ad;
+}
+
+.bar-button:hover,
+.bar-button:focus {
+  background-color: #dce1e6;
+}
+
+.bar-button_active,
+.bar-button_active:hover,
+.bar-button_active:focus {
+  background-color: #ffffff;
+}
